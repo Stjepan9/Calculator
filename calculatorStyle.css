@@ -1,0 +1,15 @@
+body{
+    font-family: monospace;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding: 20px;
+}
+
+#header h1{
+    font-size: 3rem;
+}
+
