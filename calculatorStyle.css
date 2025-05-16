@@ -1,11 +1,13 @@
 body{
     font-family: monospace;
+    background-color: #999898;
 }
 
 #header{
     display: flex;
     justify-content: center;
     margin:0;
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
 }
 
 #header h1{
@@ -44,10 +46,6 @@ body{
     background-color: rgba(51, 49, 49, 0.822);
     font-size: 4rem;
     text-align: left;
-}
-
-.zero{
-    width: 50px;
 }
 
 #buttons{
