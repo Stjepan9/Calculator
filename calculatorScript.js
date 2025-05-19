@@ -9,9 +9,10 @@ const divide = (x,y) => {
 const multiply = (x,y) => x * y;
 
 
-let operator;
-let x;
-let y;
+let currentOperator = null;
+let firstNumber = 0;
+let secondNumber = 0;
+let resetDisplay = false;
 
 const operate = (operator, x, y) =>{
     switch(operator){
@@ -32,9 +33,25 @@ const digitButtons = document.querySelectorAll(".digit");
 let displayValue = "";
 
 
-digitButtons.forEach((button)=>{
+ let digits = digitButtons.forEach((button)=>{
     button.addEventListener("click", ()=>{
         displayValue += button.textContent;
         calculatorDisplay.value = displayValue;
+        calculatorDisplay.style.color = "white";
+        calculatorDisplay.style.textAlign ="right";
+    });
+});
+
+
+const operatorButtons = document.querySelectorAll(".operator");
+
+ operatorButtons.forEach((button)=>{
+    button.addEventListener("click", ()=>{
+
+        if(currentOperator !== null) return;
+
+        firstNumber = parseFloat(displayValue);
+        currentOperator = button.textContent;
+        resetDisplay = true;
     });
 });
