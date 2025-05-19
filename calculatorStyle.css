@@ -55,32 +55,6 @@ body{
     padding: 25px;
 }
 
-#functional{
-    background-color: #a5a5a5;
-}
-#functional:hover{
-    background-color: #a5a5a58c;
-    transition: background-color 0.2s ease;
-}
-#functional:active{
-    background-color: #a5a5a55d;
-    transition: background-color 0.2s ease;
-}
-
-#operator{
-    background-color: #ff9500;
-}
-
-#operator:hover{
-    background-color: #ff9500ad;
-    transition: background-color 0.2s ease;
-}
-
-#operator:active{
-    background-color: #e28b10;
-    transition: background-color 0.2s ease;
-}
-
 
 .btn{
     width: 6rem;
@@ -101,6 +75,32 @@ body{
 
 .btn:active{
     background-color: #a5a5a556;
+    transition: background-color 0.2s ease;
+}
+
+.functional{
+    background-color: #a5a5a5;
+}
+.functional:hover{
+    background-color: #a5a5a58c;
+    transition: background-color 0.2s ease;
+}
+.functional:active{
+    background-color: #a5a5a55d;
+    transition: background-color 0.2s ease;
+}
+
+.operator{
+    background-color: #ff9500;
+}
+
+.operator:hover{
+    background-color: #ff9500ad;
+    transition: background-color 0.2s ease;
+}
+
+.operator:active{
+    background-color: #e28b10;
     transition: background-color 0.2s ease;
 }
 

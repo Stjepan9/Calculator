@@ -1,6 +1,3 @@
-const calculatorDisplay = document.querySelector("#display");
-
-
 
 
 const add = (x,y)=> x + y;
@@ -29,5 +26,15 @@ const operate = (operator, x, y) =>{
     }
 };
 
+const calculatorDisplay = document.querySelector("#display");
+const digitButtons = document.querySelectorAll(".digit");
 
-console.log(operate("+", 5, 6));
+let displayValue = "";
+
+
+digitButtons.forEach((button)=>{
+    button.addEventListener("click", ()=>{
+        displayValue += button.textContent;
+        calculatorDisplay.value = displayValue;
+    });
+});
